@@ -22,7 +22,7 @@
             <property name="fileName" value="${generator.mapperConfigFilename}" />
             <property name="targetPackage" value="${generator.mapperPackage}" />
             <property name="targetProject"
-                value="${generator.targetProject}/src/main/java" />
+                value="${generator.targetProject}/src/main/resources" />
         </plugin>
         <plugin type="org.mybatis.generator.plugins.RenameExampleClassPlugin">
             <property name="searchString" value="Example$" />
@@ -55,7 +55,7 @@
 
         <!-- 生成mapxml文件 -->
         <sqlMapGenerator targetPackage="${generator.mapperPackage}"
-            targetProject="${generator.targetProject}/src/main/java">
+            targetProject="${generator.targetProject}/src/main/resources">
             <!-- 是否在当前路径下新加一层schema,eg：fase路径com.oop.eksp.user.model， true:com.oop.eksp.user.model.[schemaName] -->
             <property name="enableSubPackages" value="true" />
         </sqlMapGenerator>
